@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.morsetorch.MainActivity">
+
+    <EditText
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/ctrls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toAlphaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Alpha"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="Start Flashing" />
+
+
+
+        <Button
+            android:id="@+id/toMorseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Morse"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_below="@id/ctrls"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_below="@id/ctrls"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/msg"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_alignStart="@+id/ctrls"
+        android:layout_alignEnd="@+id/ctrls"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="77dp"
+        android:text="Send encripted through message" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="357dp"
+        android:layout_below="@+id/result2"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="75dp"
+        android:layout_toEndOf="@+id/result2"
+        app:srcCompat="@drawable/detective" />
+
+</RelativeLayout>
